@@ -115,4 +115,3 @@
 (package! tintin-mode
   :recipe (:host github
            :repo "matthewrsilver/tintin-mode"))
-(package! sqlformat)

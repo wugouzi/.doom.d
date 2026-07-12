@@ -648,7 +648,9 @@
         ;; Error message if formatter not found
         (message "sql-formatter not found in PATH!")))))
 
-(server-start)
-
+;; (server-start)
  (setq pdf-info-epdfinfo-error-filename "/tmp/pdf-tools-epdfinfo.log" ; for the server process
        pdf-info-log t)
+
+(setenv "PATH" (concat "/opt/homebrew/bin:/opt/homebrew/sbin:" (getenv "PATH")))
+  (setq exec-path (append '("/opt/homebrew/bin" "/opt/homebrew/sbin") exec-path))
